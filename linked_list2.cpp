@@ -6,6 +6,7 @@ class LinkedList{
     struct Node {
         int x;
         Node *next;
+        
     };
 
 public:
@@ -29,7 +30,21 @@ public:
         delete n;
         return ret;
     }
-    
+
+    void display(){
+    		Node * n; 
+			n = head;
+    		 if(n == NULL){
+    		 	cout << "Nothing to display";
+			 }
+			 else{
+			 	while(n!= NULL){
+    		cout<<n->x<<"\n";
+			n = n->next;	}
+			 }
+			 getch();
+
+	}
 	
 private:
     Node *head; 
@@ -39,7 +54,8 @@ void menu(){
 		cout<< " MAIN MENU " << endl;
     	cout << "1. Insert into Linked List \n";
     	cout << "2. Pop \n";
-    	cout << "3. Exit \n\n\n";
+    	cout << "3. Exit \n";
+    	cout << "4. Display \n";
 	}
 
 int main() {
@@ -70,7 +86,9 @@ int main() {
 				break;
 			}
 			case 4:{
-				
+				list.display();
+				cout << endl;
+				system("pause");
 				break;
 			}
 		}
