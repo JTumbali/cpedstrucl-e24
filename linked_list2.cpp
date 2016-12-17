@@ -55,7 +55,7 @@ void menu(){
     	cout << "1. Insert into Linked List \n";
     	cout << "2. Pop \n";
     	cout << "3. Exit \n";
-    	cout << "4. Display \n";
+    	cout << "4. Display \n ";
 	}
 
 int main() {
@@ -65,7 +65,7 @@ int main() {
     while (1){
     	system("cls");
     	menu();
-    	cout <<"Enter choice: " << endl;
+    	cout <<"Enter choice: ";
     	cin >> choice;
     	
     	switch (choice)
